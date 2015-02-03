@@ -1,0 +1,16 @@
+{
+	"cmd": ["passenger", "start"],
+	"working_dir": "$folder",
+	 "variants": [
+
+        { "name": "Passenger Restart",
+          "cmd": ["touch", "$folder/tmp/restart.txt"],
+          "working_dir": "$folder"
+        },
+
+        { "name": "Run",
+          "cmd": ["passenger", "stop"],
+          "working_dir": "$folder"
+        }
+    ]
+}
