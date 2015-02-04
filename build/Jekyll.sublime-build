@@ -1,0 +1,5 @@
+{
+	"cmd": ["jekyll", "s"],
+	"selector": "text.html.markdown",
+	"working_dir": "$folder"
+}
